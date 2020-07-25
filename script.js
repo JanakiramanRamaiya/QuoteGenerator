@@ -36,7 +36,7 @@ async function getQuotes() {
 
   try {
     loadingWithSpinner();
-    const response = await fetch(Proxy + API_URL);
+    const response = await fetch( API_URL);
     const data = await response.json();
     console.log(data);
     setAuthor(data.quoteAuthor);
