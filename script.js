@@ -44,12 +44,12 @@ async function getQuotes() {
     quoteText.innerText = data.quoteText;
     removeLoadingSpinner();
   } catch (err) {
-    // if (counter > maxCounter) renderError();
-    // else {
-    //
-    // }
-    // counter++;
-    // getQuotes();
+    if (counter > maxCounter) renderError();
+    else {
+     getQuotes();
+    }
+    counter++;
+    
     console.log("ooops error", err);
   }
 }
