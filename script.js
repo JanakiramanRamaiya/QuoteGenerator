@@ -32,7 +32,7 @@ function setAuthor(author) {
 async function getQuotes() {
   const Proxy = "https://cors-anywhere.herokuapp.com/";
   const API_URL =
-    "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
+    "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
 
   try {
     loadingWithSpinner();
